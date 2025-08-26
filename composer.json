@@ -1,0 +1,33 @@
+{
+    "name": "amerhendy/logmanager",
+    "description": "Amer LogManager package",
+    "type": "library",
+	"license": "proprietary",
+	"version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "Amerhendy\\LogManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "amerhendy",
+            "email": "amer.hendy@yahoo.com"
+        }
+    ],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config":
+	{
+		"sort-packages": true,
+		"preferred-install": "dist",
+		"optimize-autoloader": true
+	},
+	"extra":
+	{
+		"laravel":
+			{
+			"providers": ["Amerhendy\\LogManager\\LogManagerServiceProvider"]
+		}
+	}
+}
